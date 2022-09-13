@@ -104,7 +104,7 @@ MicroscopeData.WD=h5read(InputUser.HDF5FullFile,[HDF5_info.Groups.Name    '/EBSD
 MicroscopeData.XSTEP=h5read(InputUser.HDF5FullFile,[HDF5_info.Groups.Name    '/EBSD/Header/XSTEP']);
 MicroscopeData.YSTEP=h5read(InputUser.HDF5FullFile,[HDF5_info.Groups.Name    '/EBSD/Header/YSTEP']);
 
-MicroscopeData.CoordinateSystems=fliplr(rot90(h5read(InputUser.HDF5FullFile,[HDF5_info.Groups.Name    '/EBSD/Header/Coordinate Systems/ESPRIT Coordinates']),3));
+%MicroscopeData.CoordinateSystems=fliplr(rot90(h5read(InputUser.HDF5FullFile,[HDF5_info.Groups.Name    '/EBSD/Header/Coordinate Systems/ESPRIT Coordinates']),3));
 
 MicroscopeData.CoordSystems='TRZP'; %Top Right Z Plus - standard for Bruker Coords - is used in EBSD_Map
 
